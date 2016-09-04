@@ -1,0 +1,82 @@
+/* ==========================================================================
+	header settings
+/* ========================================================================== */
+
+#page-header{
+	height: 110px;
+	background-color: white;
+	padding-top: 15px;
+}
+
+
+/* ==========================================================================
+	top menu - redes sociais
+/* ========================================================================== */
+
+ul {
+	list-style: none;
+	list-style-image: none;
+	padding: 0;
+	margin: 0;
+
+}
+
+.menu-contatos{
+	color:$cor-azul-gnn; 
+	float:right;
+	margin-bottom: 5px;
+
+	
+	.contatos {
+
+		margin-right: 20px;
+
+		.email,.telefone{
+			font-size: 13px;
+			font-weight: bold;
+			letter-spacing: 0.4px;
+			font-family: $font-proxima-nova;
+		}
+
+		.email{
+			margin: 0 0 0;
+		}
+
+		.telefone{
+			text-align: right;
+		}
+
+	}
+
+	.redes-sociais{
+		margin-left: 10px;
+	}
+}
+
+/* ==========================================================================
+	Menu
+/* ========================================================================== */
+
+nav li{
+	text-transform: uppercase;
+	color:$cor-azul-gnn; 
+}
+
+.menu_wp{
+	float:right;
+
+	li a{
+		margin-left: 15px;
+		font-family: $font-proxima-nova;
+		font-size: 15px;
+	}
+}
+
+
+/* ==========================================================================
+	Logo
+/* ========================================================================== */
+
+#page-logo{
+	margin-top:10px;	
+}

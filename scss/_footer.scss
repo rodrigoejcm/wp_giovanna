@@ -1,0 +1,96 @@
+#page-footer{
+	background-color: $cor-azul-gnn;
+	width:100%!important;
+	padding-top: 40px !important;
+}
+
+
+
+.logo-footer{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+		
+
+	li{
+		float:left;
+		font-size: 13px;
+		font-weight: bold;
+		letter-spacing: 0.4px;
+		font-family: $font-proxima-nova;
+		color: white;
+
+	}
+
+	img{
+		width:100px;
+		margin-right: 20px;
+	}
+
+	.ltda{
+		margin-top: 20px;
+	}
+
+}
+.info-footer{
+	
+	border-right: 1px solid white;
+	height:190px;
+	padding: 10px 0;
+
+	.mapa{
+		width: 100%;
+		height: 170px;
+	}
+
+
+}
+
+.info-contatos{
+
+	font-family:$font-proxima-nova;
+	color: white;
+	font-size:14px;
+	height:170px;
+	padding: 20px 0;
+
+	.endereco p, .contatos p{
+		margin-bottom: -1px;
+	}
+
+
+
+}
+
+
+.redes-sociais-footer{
+	
+	ul{
+		
+		padding: 0; 
+		
+		li{
+			float: left;
+			margin-right: 10px;
+		}
+	}
+}
+
+
+
+.info-footer{
+	color:white;
+}
+
+
+.footer-menu{
+	color:white;
+	font-family:$font-proxima-nova;
+	font-weight:bold;
+	font-size:15px;
+	padding-top:20px;
+
+	li{
+		margin-bottom: 5px;
+	}
+}

@@ -1,0 +1,35 @@
+.texto-heading-empresa span{
+	font-weight:bold;
+}
+
+.botao-orcamento-home{
+
+	width: 290px;
+	margin: 0 auto;
+
+		
+	z-index: 100;
+
+	a{
+		border: 1px solid $cor-verde-gnn;
+		color: $cor-azul-gnn;
+		text-align: center;
+		font-family: $font-proxima-nova;
+		font-weight:bold;	
+		height: 50px;	
+		display: block;	
+		font-size: 18px;
+		padding-top: 12px;
+
+		&:hover{
+			background-color: $cor-verde-gnn;
+			color: white;
+		}
+
+	}
+
+
+	
+
+
+}

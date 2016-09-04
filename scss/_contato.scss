@@ -1,0 +1,86 @@
+
+.contato{
+	margin-top: 100px;
+	margin-bottom: 40px;
+
+	.input-group{
+		margin-bottom: 15px;
+	}
+}
+
+.contato .form-control:focus {
+    border-color: #3BD231;
+}
+
+.contato .form-control,.input-group {
+	width: 100% !important;
+}
+
+.contato .form-control{
+
+}
+
+select option{
+	color: #99999F;
+}
+
+select option:active{
+	color: #99999F;
+}
+
+textarea {
+	height: inherit;
+	font-size: 18px !important;
+}
+
+form .botao-form-contato{
+	background-color: $cor-verde-gnn;
+	font-family: $font-proxima-nova;
+ 	font-size: 16px;
+ 	color: white;
+ 	float: right;
+ 	width: 40%;
+ 	height: 40px;
+ 	margin-bottom: 20px;
+
+}
+
+.checkbox{
+	font-size: 14px;
+	color: #999;
+}
+
+.img-contato{
+		
+	img{
+		width:100%;
+	}
+}
+
+.contato-tel{
+	font-size: 35px;
+	font-family: 'co-headline';
+	color:white !important;
+	position: absolute;
+	top:47%;
+	left: 25%;
+	text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+}
+
+.icone-contato{
+	display: block;
+	text-align: center;
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+
+}
+
+.contato-tel i{
+
+	padding: 6px 10px;	
+	text-align: center;
+	border: 3px solid white;
+	border-radius: 50%;
+	text-shadow: 4px 4px 20px rgba(0, 0, 0, 1);
+}
+
+

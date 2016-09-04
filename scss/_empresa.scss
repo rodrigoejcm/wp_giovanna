@@ -1,0 +1,62 @@
+.texto-heading-empresa{
+	color:grey;
+	font-size: 30px;
+	text-align:center;
+	font-family: $font-proxima-nova;
+}
+
+.tres-pontos{
+	font-size: 150px;
+	text-align:center;
+	font-family: $font-proxima-nova;
+	color:$cor-verde-gnn;
+	margin-top:-130px;
+	margin-bottom:0;
+	letter-spacing: -12px; 
+}
+
+.box-qualidades{
+	font-family: $font-proxima-nova;
+	border: 1px solid $cor-azul-gnn;
+	text-align:center;
+	padding:10px 40px;
+	height:250px;
+
+
+	.titulo{
+		font-weight: bold;
+		font-size: 25px;
+		margin-bottom: 30px;
+		margin-top: 15px;
+		color:$cor-azul-gnn;
+	}
+
+	.descricao{
+		font-size: 18px;
+		color:grey;
+
+	}
+	
+}
+
+.certificacoes{
+	font-weight: lighter;
+	font-size: 40px;
+	color:$cor-azul-gnn;
+	text-align:center;
+	font-family: $font-proxima-nova;
+	margin-bottom:0;
+}
+
+.box-certificado{
+	font-family: $font-proxima-nova;
+	border: 1px solid grey;
+	color:grey;
+	padding: 40px 30px 30px 30px;
+
+
+	p,div {
+		text-align: center;
+	}
+
+}

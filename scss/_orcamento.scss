@@ -1,0 +1,56 @@
+
+.form-orcamento{
+
+	margin: 0 5%;
+	padding: 5% 5%; 
+
+	.box-form{
+		/* background-color: $cor-cinza-gnn; */
+		padding: 2% 5%;
+
+		label{
+			font-family: $font-proxima-nova;
+			color: $cor-azul-gnn;
+		}
+
+		p{
+			font-family: $font-proxima-nova;
+			color: white;
+			font-weight:bold;
+			background-color: $cor-cinza-gnn;
+			padding: 5px 8px;
+			webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+		}
+
+		.ninja-forms-field-error p{
+			background-color:white;
+			color: $cor-verde-gnn;
+		}
+
+
+	}
+
+	.botao-form-contato{
+			float:none;
+			width: 100%;
+			margin: 0 auto;
+
+			&:hover{
+				background-color:$cor-cinza-gnn;
+			}
+	
+	}
+
+	article .alert{
+		text-align: center;
+		margin: 5px 10px !important;
+		padding:0 !important;
+	}
+
+	
+
+
+}
+
