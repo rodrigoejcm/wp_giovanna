@@ -13,10 +13,10 @@
 		<?php wp_head() ?>
     </head>
     <body <?php body_class() ?>>
-		<header id="page-header">
+		<header id="page-header" class="navbar-fixed-top">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6 col-sm-6 col-xs-6">
 						<div id="page-logo">
 							<?php if (!is_front_page()): ?>
 								<a href="<?php bloginfo('url') ?>" title="<?php bloginfo('name') ?> - <?php bloginfo('description') ?>">
@@ -27,31 +27,38 @@
 							<?php endif; ?>
 						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<div class="slicknav-responsivo"></div>
 						<div class="row">
-							<ul class="menu-contatos">
-								<li class="contatos">
-									<p class="email">contato@giovannatransporte.com.br</p>
-									<p class="telefone">(21) 2709-3495</p>
-								</li>
-								<li class="redes-sociais">
-									<img src="<?= get_template_directory_uri() . "/images/icones-redes-sociais_fb.png"?>"></img>
-								</li>
-								<li class="redes-sociais">
-									<img src="<?= get_template_directory_uri() . "/images/icones-redes-sociais_li.png"?>"></img>
-								</li>
-								<li class="redes-sociais">
-									<img src="<?= get_template_directory_uri() . "/images/icones-redes-sociais_wh.png"?>"></img>
-								</li>
-							</ul>
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<ul class="menu-contatos">
+									<li class="redes-sociais">
+										<a href="https://www.facebook.com/GNNtransporte" target="_blank">
+											<img class="rs-fb" src="<?= get_template_directory_uri() . "/images/header_icon_fb.png"?>"></img>
+										</a>
+									</li>
+									<li class="redes-sociais">
+										<a href="https://www.linkedin.com/company/giovanna-transporte" target="_blank">
+											<img class="rs-li" src="<?= get_template_directory_uri() . "/images/header_icon_in.png"?>"></img>
+										</a>
+									</li>
+									
+									<!-- <li class="redes-sociais">
+										<img class="rs-wh"src="<?= get_template_directory_uri() . "/images/header_icon_whats.png"?>"></img>
+									</li> -->
+								</ul>
+							</div>
 						</div>
+						<br>
 						<div class="row">
-							<div class="menu_wp">
-								<?php wp_nav_menu(array(
-									'theme_location' => 'main-nav',
-									'container'      => 'nav',
-									'container_id'   => 'primary-nav'
-								)) ?>	
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="menu_wp">
+									<?php wp_nav_menu(array(
+										'theme_location' => 'main-nav',
+										'container'      => 'nav',
+										'container_id'   => 'primary-nav'
+									)) ?>	
+								</div>
 							</div>
 						</div>
 						

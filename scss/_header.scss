@@ -6,6 +6,13 @@
 	height: 110px;
 	background-color: white;
 	padding-top: 15px;
+/* 	position: fixed;
+	z-index: 10;
+	top:0px; */
+}
+
+#content-wrap{
+	margin-top: 120px;
 }
 
 
@@ -50,6 +57,24 @@ ul {
 
 	.redes-sociais{
 		margin-left: 10px;
+
+		.rs-fb{
+
+			&:hover{
+				background-image: url("../images/header_icon_fb_hover.png");
+			}
+
+		}
+		.rs-li{
+			&:hover{
+				background-image: url("../images/header_icon_in_hover.png");	
+			}
+		}
+		.rs-wh{
+			&:hover{
+				background-image: url("../images/header_icon_whats_hover.png");
+			}
+		}
 	}
 }
 
@@ -60,6 +85,14 @@ ul {
 nav li{
 	text-transform: uppercase;
 	color:$cor-azul-gnn; 
+
+	a{
+
+		&:hover{
+		color:$cor-verde-gnn !important;
+		
+		}
+	}
 }
 
 .menu_wp{
@@ -72,11 +105,25 @@ nav li{
 	}
 }
 
+.current_page_item{
+
+	a{
+		color:$cor-verde-gnn !important;	
+	}
+	
+	font-weight:bold;
+}
+
 
 /* ==========================================================================
 	Logo
 /* ========================================================================== */
 
 #page-logo{
-	margin-top:10px;	
+	margin-top:10px;
+
+	img{
+		width: 380px;
+		padding-top: 9px;
+	}	
 }

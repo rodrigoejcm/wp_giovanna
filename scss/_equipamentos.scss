@@ -1,0 +1,276 @@
+.texto-heading-equipamentos{
+	color:grey;
+	font-size: 20px;
+	text-align:center;
+	font-family: $font-proxima-nova;
+	padding: 0px 20px;
+	font-weight:lighter;
+}
+
+.overtop-equipamentos{
+	margin-top: -100px;
+	background-color:white;
+	padding: 40px 80px;
+	
+}
+
+
+.fullwidth-nomargin-equipamentos{
+	width:100%;
+	margin-left:0 !important;
+	margin-right:0 !important;
+	margin-top:-40px;
+
+
+}
+
+.fundo-equipamentos{
+	background-color: $cor-cinza-claro-gnn;
+	height:100%;
+
+}
+
+.box-equipamento{
+	border: 1px solid $cor-azul-gnn;
+	border-bottom: none;
+	height: 302px;
+    text-align: center;
+	background-color: white;
+
+	&:hover{
+		
+	}
+
+	.overlay{
+		 background-color: transparent;
+		 position: relative;
+		 z-index: 3;
+		width: 100%;
+		height: 100%;
+
+		.carretas p{
+    		font-size: 14px!important;
+    	}
+
+		.overlay-texto{
+			display: none;
+			/* margin-top: 40%; */
+			
+			position: relative;
+			transform: translateY(-50%);
+			top: 50%;
+	
+
+			 p{
+			    	font-weight: bold;
+			    	font-family: $font-proxima-nova;
+			    	font-size: 17px;
+			    	color: white;
+			    	padding: 0 10px;
+			 
+			    }
+		}
+
+
+		&:hover{
+			background-color: $cor-azul-gnn;
+			background-color: rgba(0,59,86,0.7);
+    		/* filter: alpha(opacity=70); */ /* For IE8 and earlier */
+    		/* FAZER A IMAGEM DO CARRO FICAR EM BLUR filter: blur(50px); e o BOTAO MUDAR TB NO HOVER */
+
+    	
+
+    		.overlay-texto{
+    			display: block;
+    			opacity: none;
+    			 z-index: 4;
+
+    			 p{
+    			 	opacity: none;
+    			 }
+
+
+
+
+
+			   
+    		}
+
+		}
+	}
+
+	.imagem-equipamento{
+		width: 300px;
+		height: 300px;
+		position: absolute;
+	    margin: auto;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	}
+
+	.nome-equipamento{
+		text-align: center;
+		font-weight: bold;
+		color: $cor-azul-gnn;
+		font-family:$font-proxima-nova; 
+		position: relative;
+    	top: -14%
+	}
+
+	.box-bottom{
+
+    font-size: 21px;
+    overflow: hidden;
+ 	margin: -54px 0px 0px 0px;
+    position: absolute;
+    width: calc(100% - 32px);
+     z-index: 4;
+
+    
+	    img{
+	    	width: 40px;
+	    }
+
+	    &:before , &:after{
+	      content: "";
+	      position: absolute;
+	      width: 100%;
+	      margin-top: 0;
+	      border-top: 1px solid $cor-azul-gnn !important; 
+	      top: 50%;
+
+	    }
+	    
+	    &:before{
+	    -ms-transform: translate(-100%, 0); /* IE 9 */
+	    -webkit-transform: translate(-100%, 0); /* Safari */
+	    transform: translate(-100%, 0);
+
+	      margin-left: -15px;
+	    }
+
+	    &:after{
+	      margin-left: 15px;
+	    }
+    }
+
+
+}
+
+.botao_hover_menos{
+	background-image: url("../images/botaomenos.png") !important;
+}
+
+.fullwidth-nomargin-equipamentos-frota{
+	width:100%;
+	margin-left:0 !important;
+	margin-right:0 !important;
+	margin-top:-40px;
+
+
+}
+
+.fundo-equipamentos-frota{
+	background-color: white;
+	height:100%;
+
+}
+
+/* TABS */
+
+/* nav-tabs { border-bottom: 2px solid #DDD; } */
+
+
+.nav{
+	font-family: $font-proxima-nova;
+}
+
+.nav, .nav-tab li, .nav li a{
+	height: 60px !important;
+
+}
+.nav-tabs > li.ui-state-active > a, .nav-tabs > li.ui-state-active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+.nav,.nav-tab li,.nav-tab li{
+	background-color:white!important;
+}
+.nav-tabs > li > a { border: none; color: #666; }
+.nav-tabs > li.ui-state-active > a, .nav-tabs > li > a:hover { border: none; background: transparent; }
+
+.nav-tabs > li.ui-state-active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+.tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+.tab-pane { padding: 15px 0; }
+.tab-content{padding:20px;height: 330px;border-top: 3px solid $cor-verde-gnn;}
+
+.card {background: #F7F7F7 none repeat scroll 0% 0%; margin-bottom: 30px; }
+
+.nav-tabs.nav-justified>li>a,.nav-tabs.nav-justified>.ui-state-active>a,.nav-tabs.nav-justified>.ui-state-active>a:focus, .nav-tabs.nav-justified>.active>a:hover{
+	border:none;
+}
+
+.nav-tabs > li > a::after { content: ""; background: $cor-azul-gnn; height: 3px; position: absolute; width: 100%; left: 0px; bottom: -3px; transition: all 250ms ease 0s; transform: scale(0); }
+.nav-tabs .ui-state-active a::after { content: ""; background: $cor-azul-gnn !important; height: 3px !important; position: absolute !important; width: 100% !important; left: 0px; bottom: -3px; }
+
+
+.nav-tabs > li > a {
+	outline:0 !important;
+}
+
+.ui-state-hover,.ui-state-focus {
+	border:none !important;
+	outline: none;
+}
+
+.logo-frota{ 
+
+	 display: inline-block;
+	  vertical-align: top;
+	  height: 220px;
+
+	img{
+		position: relative;
+		transform: translateY(-50%);
+		top: 50%;
+		margin: 0 10%;
+	}
+}
+
+.modelos-frota {
+
+	 display: inline-block;
+	  vertical-align: top;
+	  height: 220px;
+
+	ul{
+		font-weight:lighter;
+		color: $cor-cinza-gnn;
+		font-family: $font-proxima-nova;
+	
+		text-transform: lowercase;	
+		position: relative;
+		transform: translateY(-50%);
+		top: 50%;
+
+		
+		li{
+			margin-bottom: 15px;
+			outline: 0;
+
+			a{
+				outline: 0;
+			}
+
+		}
+
+		li:first-letter{
+			text-transform: uppercase
+		}
+
+	}
+	
+
+	
+ 	
+}
+

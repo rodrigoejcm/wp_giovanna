@@ -1,8 +1,17 @@
 .texto-heading-empresa{
 	color:grey;
-	font-size: 30px;
+	font-size: 20px;
 	text-align:center;
 	font-family: $font-proxima-nova;
+	padding: 0px 20px;
+	font-weight:lighter;
+}
+
+.overtop-empresa{
+	margin-top: -80px;
+	background-color:white;
+	padding: 40px 80px;
+	
 }
 
 .tres-pontos{
@@ -17,25 +26,108 @@
 
 .box-qualidades{
 	font-family: $font-proxima-nova;
-	border: 1px solid $cor-azul-gnn;
+	border: 2px solid $cor-azul-gnn;
+	border-top: none;
+	border-bottom: none;
 	text-align:center;
-	padding:10px 40px;
-	height:250px;
+	padding:10px 30px;
+	height:320px;
 
 
 	.titulo{
 		font-weight: bold;
 		font-size: 25px;
-		margin-bottom: 30px;
-		margin-top: 15px;
+		margin-bottom: 20px;
+		margin-top: 10px;
 		color:$cor-azul-gnn;
 	}
 
 	.descricao{
 		font-size: 18px;
 		color:grey;
-
+		font-weight: lighter;
 	}
+
+	.box-top{
+
+    font-size: 21px;
+    overflow: hidden;
+    margin: -25px 0px 0px -32px;
+    position: absolute;
+    width: calc( 100% - 30px );
+
+    
+	    img{
+	    	width: 40px;
+	    }
+
+	    &:before , &:after{
+	      content: "";
+	      position: absolute;
+	      width: 100%;
+	      margin-top: -2px;
+	      border-top: 2px solid $cor-azul-gnn !important; 
+	      top: 50%;
+
+	    }
+	    
+	    &:before{
+	    -ms-transform: translate(-100%, 0); /* IE 9 */
+	    -webkit-transform: translate(-100%, 0); /* Safari */
+	    transform: translate(-100%, 0);
+
+	      margin-left: -15px;
+	    }
+
+	    &:after{
+	      margin-left: 15px;
+	    }
+    }
+
+    .box-bottom{
+
+    font-size: 21px;
+    overflow: hidden;
+    margin: 38px 0 0 -32px;
+    position: absolute;
+    width: calc( 100% - 30px );
+
+    
+    img{
+      width: 40px;
+    }
+
+    &:before , &:after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      margin-top: 2px;
+      border-top: 2px solid $cor-azul-gnn; 
+      top: 50%;
+
+    }
+    
+    &:before{
+    -ms-transform: translate(-100%, 0); /* IE 9 */
+    -webkit-transform: translate(-100%, 0); /* Safari */
+    transform: translate(-100%, 0);
+
+      margin-left: -15px;
+    }
+
+    &:after{
+      margin-left: 15px;
+    }
+  }
+
+  .box-bottom-conectada{
+  	margin-top: 11px !important;
+  }
+
+  .box-bottom-segura{
+  	margin-top: 61px !important ;	
+  }
+
 	
 }
 
@@ -50,13 +142,32 @@
 
 .box-certificado{
 	font-family: $font-proxima-nova;
-	border: 1px solid grey;
 	color:grey;
-	padding: 40px 30px 30px 30px;
+	
 
+	img{
+		
+	}
 
 	p,div {
 		text-align: center;
 	}
 
+}
+
+
+.fullwidth-nomargin-empresa{
+	width:100%;
+	margin-left:0 !important;
+	margin-right:0 !important;
+	margin-top:-40px;
+
+
+}
+
+.fundo-empresa{
+	background-image: url("../images/img_atributos.jpg");
+	height:870px;
+	background-position: center center;
+	background-size: cover;
 }

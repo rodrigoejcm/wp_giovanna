@@ -1,4 +1,57 @@
 
+.fullwidth-nomargin-contato{
+	width:100%;
+	margin-left:0 !important;
+	margin-right:0 !important;
+
+}
+
+.fundo-contato{
+	background-image: url("../images/img_contato.jpg");
+	height:633px;
+	background-position: center center;
+	background-size: cover;
+}
+
+input, textarea{
+	background-color:transparent !important;
+	color: white !important;
+	border: 2px solid white !important;
+	border-radius: 0px !important;
+	text-transform:uppercase;
+}
+
+.ninja-forms-error-msg{
+	display:none;
+}
+.ninja-forms-field-error, .help-block{
+	margin-bottom:0 !important;
+
+	p{
+		margin-bottom: 0 !important;
+		font-size: 12px;
+	}
+}
+
+.botao-form-contato{
+	width: 100% !important;
+	border: 2px solid $cor-verde-gnn !important;
+	text-transform: uppercase;
+	font-size: 14px !important;
+
+	&:hover{
+			background-color: $cor-verde-gnn !important;
+			color: white !important;
+			font-weight: bold;
+	}
+}
+
+
+
+input[placeholder], [placeholder], *[placeholder] {
+   text-transform: uppercase;
+}
+
 .contato{
 	margin-top: 100px;
 	margin-bottom: 40px;
@@ -30,7 +83,7 @@ select option:active{
 
 textarea {
 	height: inherit;
-	font-size: 18px !important;
+	font-size: 14px !important;
 }
 
 form .botao-form-contato{
@@ -84,3 +137,107 @@ form .botao-form-contato{
 }
 
 
+.box-contato-descricao{
+	font-family: $font-proxima-nova;
+	border: 2px solid white;
+	border-top: none;
+	border-bottom: none;
+	text-align:center;
+	padding:10px 30px;
+	height:307px;
+
+
+
+	.descricao{
+		margin-top: 70px;
+		font-size: 20px;
+		color:white;
+		font-family: $font-proxima-nova;
+		font-weight: lighter;
+
+	}
+
+	.box-top{
+
+    font-size: 21px;
+    overflow: hidden;
+    margin: -25px 0px 0px -32px;
+    position: absolute;
+    width: calc( 100% - 30px );
+
+    
+	    img{
+	    	width: 40px;
+	    }
+
+	    &:before , &:after{
+	      content: "";
+	      position: absolute;
+	      width: 100%;
+	      margin-top: -2px;
+	      border-top: 2px solid white !important; 
+	      top: 50%;
+
+	    }
+	    
+	    &:before{
+	    -ms-transform: translate(-100%, 0); /* IE 9 */
+	    -webkit-transform: translate(-100%, 0); /* Safari */
+	    transform: translate(-100%, 0);
+
+	      margin-left: -15px;
+	    }
+
+	    &:after{
+	      margin-left: 15px;
+	    }
+    }
+
+    .box-bottom{
+    -ms-transform: translate(0, -50%); /* IE 9 */
+    -webkit-transform: translate(0, -50%); /* Safari */
+    transform: translate(0, -50%);
+    font-size: 21px;
+    overflow: hidden;
+    margin: 65px -33px 0 -32px;
+    position: absolute;
+     width: calc( 100% - 30px );
+
+    
+    img{
+      width: 40px;
+    }
+
+    &:before , &:after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      border-top: 2px solid white !important; 
+      top: 50%;
+
+    }
+    
+    &:before{
+    -ms-transform: translate(-100%, 0); /* IE 9 */
+    -webkit-transform: translate(-100%, 0); /* Safari */
+    transform: translate(-100%, 0);
+
+      margin-left: -15px;
+    }
+
+    &:after{
+      margin-left: 15px;
+    }
+  }
+	
+}
+
+.telefone-contato{
+	margin-top: 30px;
+		font-size: 20px;
+		color:white;
+		font-family: $font-proxima-nova;
+		font-weight: lighter;
+		text-align: center;
+
+}

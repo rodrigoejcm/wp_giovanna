@@ -1,7 +1,8 @@
 #page-footer{
-	background-color: $cor-azul-gnn;
+	background-color: white;
 	width:100%!important;
 	padding-top: 40px !important;
+	border-top: 1px solid #f9f3f3;
 }
 
 
@@ -18,7 +19,7 @@
 		font-weight: bold;
 		letter-spacing: 0.4px;
 		font-family: $font-proxima-nova;
-		color: white;
+		color: $cor-azul-gnn;
 
 	}
 
@@ -34,14 +35,31 @@
 }
 .info-footer{
 	
-	border-right: 1px solid white;
+	border-right: 1px solid $cor-azul-gnn;
 	height:190px;
 	padding: 10px 0;
 
-	.mapa{
+	.maps{
+
+		overflow: hidden;
 		width: 100%;
 		height: 170px;
-	}
+
+		.mapa{
+		width: 100%;
+		height: 170px;
+		transition: all .2s ease-in-out;
+
+
+
+			&:hover{
+				transform: scale(1.7);
+			}
+		}
+
+	}	
+
+	
 
 
 }
@@ -49,13 +67,17 @@
 .info-contatos{
 
 	font-family:$font-proxima-nova;
-	color: white;
+	color: $cor-azul-gnn;
 	font-size:14px;
 	height:170px;
-	padding: 20px 0;
+	padding: 0 0;
 
 	.endereco p, .contatos p{
 		margin-bottom: -1px;
+	}
+
+	.contatos, .redes-sociais-footer{
+		margin-top: 8px;
 	}
 
 
@@ -74,17 +96,39 @@
 			margin-right: 10px;
 		}
 	}
+
+
+	.redes-sociais{
+
+		.rs-fb{
+
+			&:hover{
+				background-image: url("../images/header_icon_fb_hover.png");
+			}
+
+		}
+		.rs-li{
+			&:hover{
+				background-image: url("../images/header_icon_in_hover.png");	
+			}
+		}
+		.rs-wh{
+			&:hover{
+				background-image: url("../images/header_icon_whats_hover.png");
+			}
+		}
+	}
 }
 
 
 
 .info-footer{
-	color:white;
+	color: $cor-azul-gnn;
 }
 
 
 .footer-menu{
-	color:white;
+	color: $cor-azul-gnn;
 	font-family:$font-proxima-nova;
 	font-weight:bold;
 	font-size:15px;
@@ -92,5 +136,17 @@
 
 	li{
 		margin-bottom: 5px;
+
+		a{
+
+			&:hover{
+			color:$cor-verde-gnn !important;
+		
+		}
 	}
+
+
+
+}
+	
 }

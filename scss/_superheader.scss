@@ -42,13 +42,13 @@
 	
 }
 
-.superheader-giovanna-rotas{
+.superheader-giovanna-servicos{
 	position: absolute;
 	top: 90px;
 	left:0;
 	z-index: -1;
 	width: 100%;
-	height: 100vh;
+	height: 350px;
 	-webkit-box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
     -moz-box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
     box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
@@ -57,7 +57,49 @@
 
 	img{
 		width: 100%;
-		height: 100vh;
+		height: 350px;
+		overflow: hidden;	
+	}
+	
+}
+
+.superheader-giovanna-orcamento{
+	position: absolute;
+	top: 90px;
+	left:0;
+	z-index: -1;
+	width: 100%;
+	height: 350px;
+	-webkit-box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
+    box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
+    display: block;
+    background: transparent;
+
+	img{
+		width: 100%;
+		height: 350px;
+		overflow: hidden;	
+	}
+	
+}
+
+.superheader-giovanna-rotas{
+	position: absolute;
+	top: 90px;
+	left:0;
+	z-index: -1;
+	width: 100%;
+	height: 350px;
+	-webkit-box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
+    box-shadow: inset 0px -30px 71px -15px rgba(0,0,0,0.5);
+    display: block;
+    background: transparent;
+
+	img{
+		width: 100%;
+		height: 350px;
 		overflow: hidden;	
 	}
 	
@@ -69,12 +111,21 @@
 .superheader-box-home{
 
 	font-family: $font-proxima-nova;
+	font-weight:lighter;
 	width:100%;
 	height:435px;
-	padding-top: 100px;
+	padding-top: 190px;
+	color:white;
+	text-align: center;
+	font-size:38px;
+	letter-spacing: 3px;
+
+	p{
+		text-shadow: 4px 4px 20px rgba(0, 0, 0, 1);
+	}
 
 
-	.box{
+/* 	.box{
 
 		margin-bottom: 15px;
 
@@ -97,87 +148,91 @@
 
 
 	}
-
+ */
 }
 
 
 
 .superheader-box-empresa{
 
+	
 	font-family: $font-proxima-nova;
+	font-weight:lighter;
 	width:100%;
-	height:305px;
-	padding-top: 35px;
+	height:300px;
+	padding-top: 130px;
+	color:white;
+	text-align: center;
+	font-size:35px;
+	letter-spacing: 2px;
 
-
-	.box{
-
-		margin-bottom: 15px;
-
-		span{
-			padding: 0 10px;
-			background-color: white;
-		}
-
-		.texto-light-azul{
-			font-size: 35px;
-			font-weight: lighter;
-			color: $cor-azul-gnn;
-		}
-
-		.texto-bold-verde{
-			font-size: 37px;
-			font-weight: bold;
-			color: $cor-verde-gnn;
-		}
-
-
+		p{
+		text-shadow: 4px 4px 20px rgba(0, 0, 0, 1);
 	}
+
+
+}
+
+
+.superheader-box-servicos{
+
+	
+	font-family: $font-proxima-nova;
+	font-weight:lighter;
+	width:100%;
+	height:300px;
+	padding-top: 130px;
+	color:white;
+	text-align: center;
+	font-size:35px;
+	letter-spacing: 2px;
+
+		p{
+		text-shadow: 4px 4px 20px rgba(0, 0, 0, 1);
+		}
+
 
 }
 
 .superheader-box-rotas{
 
-	font-family: $font-proxima-nova;
+		font-family: $font-proxima-nova;
+	font-weight:lighter;
 	width:100%;
-	height:305px;
-	padding-top: 35px;
+	height:300px;
+	padding-top: 30px;
+	color:white;
+	text-align: center;
+	font-size:35px;
+	letter-spacing: 2px;
 
-
-	.box{
-
-		margin-bottom: 15px;
-
-		span{
-			padding: 0 10px;
-			background-color: white;
+		p{
+		text-shadow: 4px 4px 20px rgba(0, 0, 0, 1);
 		}
 
+
+}
+
+
+@media screen and (max-width: 400px) {
+	
+	.box{
 		.texto-light-azul{
-			font-size: 35px;
-			font-weight: lighter;
-			color: $cor-azul-gnn;
+			font-size: 30px!important;	
 		}
 
 		.texto-bold-verde{
-			font-size: 37px;
-			font-weight: bold;
-			color: $cor-verde-gnn;
+			font-size: 33px!important;
+		
 		}
+		
+	}	
 
-
+	.superheader-giovanna-home{
+		height:100vh;
 	}
-
-	.box-semfundo{
-		background-color:transparent;
-		color: white;
-		font-size: 30px;
-		font-weight: lighter;
-		line-height: 1.1;
-
-		span{
-			font-weight: bold;
-		}
+	.superheader-box-home{
+		height: 510px;
 	}
 
 }
